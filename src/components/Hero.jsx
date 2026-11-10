@@ -49,26 +49,26 @@ export default function Hero() {
 
           </div>
 
-          {/* Right Column: Hero Graphic (Escuela Superior Emblem) */}
+          {/* Right Column: Hero Graphic (IUGNA Logo) */}
           <div className="lg:col-span-5 xl:col-span-5 flex justify-center lg:justify-end">
             <div className="relative group max-w-xs sm:max-w-sm w-full">
-              {/* Soft decorative shadow */}
-              <div className="absolute -inset-1.5 bg-gradient-to-r from-sky-400/30 via-amber-400/20 to-blue-600/30 rounded-3xl blur-xl group-hover:blur-2xl transition duration-500 opacity-80"></div>
+              {/* Soft decorative glow */}
+              <div className="absolute -inset-1.5 bg-gradient-to-r from-emerald-500/30 via-sky-500/20 to-blue-600/30 rounded-3xl blur-xl group-hover:blur-2xl transition duration-500 opacity-80"></div>
               
-              <div className="relative rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl bg-white p-4 sm:p-5 flex flex-col items-center text-center">
-                <div className="w-44 sm:w-52 h-auto flex items-center justify-center py-1">
+              <div className="relative rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl bg-white p-5 sm:p-6 flex flex-col items-center text-center">
+                <div className="w-52 sm:w-64 h-auto flex items-center justify-center py-2">
                   <img 
-                    src="/images/escuela_superior.jpg" 
-                    alt="Escuela Superior de Gendarmería Nacional - Grl Br D Manuel M. Calderón" 
-                    className="w-full h-auto object-contain max-h-56 filter drop-shadow transform group-hover:scale-105 transition-transform duration-500"
+                    src="/images/iugna.png" 
+                    alt="Instituto Universitario de Gendarmería Nacional Argentina - IUGNA" 
+                    className="w-full h-auto object-contain max-h-44 filter drop-shadow-sm transform group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
-                <div className="mt-3 pt-2.5 border-t border-slate-200/80 w-full">
+                <div className="mt-3 pt-3 border-t border-slate-200/80 w-full">
                   <span className="text-xs font-bold text-slate-800 tracking-wide block uppercase">
-                    Escuela Superior de Gendarmería
+                    Instituto Universitario de Gendarmería Nacional
                   </span>
-                  <span className="text-[11px] font-semibold text-sky-800 italic block mt-0.5">
-                    "Saber para hacer"
+                  <span className="text-[11px] font-semibold text-emerald-700 block mt-0.5">
+                    IUGNA • Formación Universitaria
                   </span>
                 </div>
               </div>
