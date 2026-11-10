@@ -199,3 +199,4 @@ export default function BiografiaModal({ isOpen, onClose }) {
     </div>
   );
 }
+

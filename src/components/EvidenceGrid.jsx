@@ -7,12 +7,13 @@ import {
   Edit3, 
   Eye, 
   Download, 
+  Play,
   CheckCircle2,
   ChevronRight
 } from 'lucide-react';
 import { evidenceCards } from '../data/portfolioData';
 
-export default function EvidenceGrid({ onOpenDownloadModal, onSelectPreview }) {
+export default function EvidenceGrid({ onOpenDownloadModal, onSelectPreview, onOpenVideoModal }) {
   
   const getCardIcon = (iconName) => {
     switch (iconName) {
@@ -91,26 +92,38 @@ export default function EvidenceGrid({ onOpenDownloadModal, onSelectPreview }) {
               </div>
             </div>
 
-            {/* Bottom Actions: [Ver] and [Descargar] */}
-            <div className="pt-3 border-t border-slate-100 flex items-center space-x-2.5">
+            {/* Bottom Actions: [Ver], [Ver video] (if caso práctico), and [Descargar] */}
+            <div className="pt-3 border-t border-slate-100 flex items-center space-x-2">
               
               {/* Ver Button */}
               <button
                 onClick={() => onSelectPreview(card.primaryFileId, card)}
-                className="flex-1 inline-flex items-center justify-center space-x-1.5 py-2 px-3 rounded-lg text-xs sm:text-sm font-semibold bg-sky-50 text-sky-700 hover:bg-sky-100 hover:text-sky-800 border border-sky-200/80 transition-all duration-200 hover:scale-105 active:scale-95 group/btn"
+                className="flex-1 inline-flex items-center justify-center space-x-1 py-2 px-2.5 rounded-lg text-xs sm:text-sm font-semibold bg-sky-50 text-sky-700 hover:bg-sky-100 hover:text-sky-800 border border-sky-200/80 transition-all duration-200 hover:scale-105 active:scale-95 group/btn"
                 title="Vista previa y detalles del documento"
               >
-                <Eye className="w-4 h-4 text-sky-600 group-hover/btn:scale-110 transition-transform" />
+                <Eye className="w-3.5 h-3.5 text-sky-600 group-hover/btn:scale-110 transition-transform" />
                 <span>Ver</span>
               </button>
+
+              {/* Botón Ver video (exclusivo para Caso práctico) */}
+              {card.id === 'card-caso' && (
+                <button
+                  onClick={() => onOpenVideoModal && onOpenVideoModal()}
+                  className="flex-1 inline-flex items-center justify-center space-x-1 py-2 px-2.5 rounded-lg text-xs sm:text-sm font-semibold bg-rose-50 text-rose-700 hover:bg-rose-100 hover:text-rose-800 border border-rose-200 transition-all duration-200 hover:scale-105 active:scale-95 group/btn shadow-xs"
+                  title="Ver video del caso práctico en YouTube"
+                >
+                  <Play className="w-3.5 h-3.5 text-rose-600 fill-rose-600 group-hover/btn:scale-110 transition-transform" />
+                  <span>Ver video</span>
+                </button>
+              )}
 
               {/* Descargar Button */}
               <button
                 onClick={() => onOpenDownloadModal(card.primaryFileId, card)}
-                className="flex-1 inline-flex items-center justify-center space-x-1.5 py-2 px-3 rounded-lg text-xs sm:text-sm font-semibold bg-[#0284c7] hover:bg-[#0369a1] text-white shadow-sm transition-all duration-200 hover:scale-105 hover:shadow-md active:scale-95 group/btn"
+                className="flex-1 inline-flex items-center justify-center space-x-1 py-2 px-2.5 rounded-lg text-xs sm:text-sm font-semibold bg-[#0284c7] hover:bg-[#0369a1] text-white shadow-sm transition-all duration-200 hover:scale-105 hover:shadow-md active:scale-95 group/btn"
                 title="Elegir y descargar archivo (Word, PDF, PPT)"
               >
-                <Download className="w-4 h-4 text-white group-hover/btn:translate-y-0.5 transition-transform" />
+                <Download className="w-3.5 h-3.5 text-white group-hover/btn:translate-y-0.5 transition-transform" />
                 <span>Descargar</span>
               </button>
 

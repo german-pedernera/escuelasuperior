@@ -9,6 +9,7 @@ import DownloadModal from './components/DownloadModal';
 import PreviewModal from './components/PreviewModal';
 import InfoModal from './components/InfoModal';
 import BiografiaModal from './components/BiografiaModal';
+import VideoModal from './components/VideoModal';
 import { Download, Sparkles } from 'lucide-react';
 import { evidenceCards } from './data/portfolioData';
 
@@ -25,6 +26,7 @@ export default function App() {
   const [infoModalType, setInfoModalType] = useState('bibliografia');
 
   const [biografiaModalOpen, setBiografiaModalOpen] = useState(false);
+  const [videoModalOpen, setVideoModalOpen] = useState(false);
 
   const [activeSection, setActiveSection] = useState('all');
 
@@ -133,6 +135,7 @@ export default function App() {
             <EvidenceGrid 
               onOpenDownloadModal={handleOpenDownloadModal}
               onSelectPreview={handleOpenPreview}
+              onOpenVideoModal={() => setVideoModalOpen(true)}
             />
           </div>
 
@@ -167,6 +170,11 @@ export default function App() {
       <BiografiaModal
         isOpen={biografiaModalOpen}
         onClose={() => setBiografiaModalOpen(false)}
+      />
+
+      <VideoModal
+        isOpen={videoModalOpen}
+        onClose={() => setVideoModalOpen(false)}
       />
 
       {/* Floating Download Button (Mobile / Desktop Quick Access) */}
