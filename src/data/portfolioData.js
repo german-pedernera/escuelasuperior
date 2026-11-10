@@ -94,17 +94,57 @@ export const allFiles = [
     relatedCardId: "card-caso"
   },
   {
-    id: "biografia-escolar",
-    name: "Biografia escolar.docx",
-    displayName: "Biografía Escolar y Reflexiones Pedagógicas",
+    id: "biografia-escolar-01",
+    name: "Biografia escolar 01.docx",
+    displayName: "Biografía Escolar 01 - Javier Dirie",
     type: "word",
     extension: "DOCX",
-    size: "15.5 KB",
-    sizeBytes: 15903,
-    path: "/archivos/Biografia escolar.docx",
-    category: "Reflexiones",
-    description: "Análisis reflexivo sobre la trayectoria educativa y aprendizajes pedagógicos en el campo de la seguridad.",
+    size: "16.5 KB",
+    sizeBytes: 16548,
+    path: "/archivos/Biografia escolar 01.docx",
+    category: "Biografía Escolar",
+    description: "Trayectoria escolar y vivencias formativas iniciales en Puerto Rico, provincia de Misiones.",
     relatedCardId: "card-reflexiones"
+  },
+  {
+    id: "biografia-escolar-02",
+    name: "Biografia escolar 02.docx",
+    displayName: "Biografía Escolar 02 - Darío Pérez",
+    type: "word",
+    extension: "DOCX",
+    size: "15.9 KB",
+    sizeBytes: 15903,
+    path: "/archivos/Biografia escolar 02.docx",
+    category: "Biografía Escolar",
+    description: "Trayectoria escolar y vivencias formativas iniciales en la ciudad de Formosa.",
+    relatedCardId: "card-reflexiones"
+  }
+];
+
+export const biografiaFiles = [
+  {
+    id: "biografia-escolar-01",
+    name: "Biografia escolar 01.docx",
+    displayName: "Biografía escolar 01",
+    author: "Javier Dirie",
+    region: "Puerto Rico, Misiones",
+    type: "word",
+    extension: "DOCX",
+    size: "16.5 KB",
+    path: "/archivos/Biografia escolar 01.docx",
+    excerpt: "Mi trayectoria escolar comenzó en la ciudad de Puerto Rico, provincia de Misiones, lugar donde transcurrió mi infancia y donde tuve mis primeras experiencias de aprendizaje y socialización."
+  },
+  {
+    id: "biografia-escolar-02",
+    name: "Biografia escolar 02.docx",
+    displayName: "Biografía escolar 02",
+    author: "Darío Pérez",
+    region: "Formosa Capital",
+    type: "word",
+    extension: "DOCX",
+    size: "15.9 KB",
+    path: "/archivos/Biografia escolar 02.docx",
+    excerpt: "Mi trayectoria escolar comenzó en el Jardín de Infantes María Pomponeo de Escarpa, en la ciudad de Formosa, donde transcurrió gran parte de mi infancia y primeros pasos educativos."
   }
 ];
 
@@ -178,8 +218,8 @@ export const evidenceCards = [
     description: "Análisis de la práctica, aprendizajes y propuestas de mejora.",
     bullets: null,
     badge: "Evaluación Final",
-    primaryFileId: "biografia-escolar",
-    availableFileIds: ["biografia-escolar", "acta-constancia"]
+    primaryFileId: "biografia-escolar-01",
+    availableFileIds: ["biografia-escolar-01", "biografia-escolar-02", "acta-constancia"]
   }
 ];
 

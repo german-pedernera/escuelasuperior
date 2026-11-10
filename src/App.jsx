@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import DownloadModal from './components/DownloadModal';
 import PreviewModal from './components/PreviewModal';
 import InfoModal from './components/InfoModal';
+import BiografiaModal from './components/BiografiaModal';
 import { Download, Sparkles } from 'lucide-react';
 import { evidenceCards } from './data/portfolioData';
 
@@ -22,6 +23,8 @@ export default function App() {
 
   const [infoModalOpen, setInfoModalOpen] = useState(false);
   const [infoModalType, setInfoModalType] = useState('bibliografia');
+
+  const [biografiaModalOpen, setBiografiaModalOpen] = useState(false);
 
   const [activeSection, setActiveSection] = useState('all');
 
@@ -47,7 +50,12 @@ export default function App() {
     }
 
     if (linkId === 'reflexiones') {
-      handleOpenPreview('biografia-escolar');
+      setBiografiaModalOpen(true);
+      return;
+    }
+
+    if (linkId === 'biografia-escolar') {
+      setBiografiaModalOpen(true);
       return;
     }
 
@@ -95,6 +103,7 @@ export default function App() {
       {/* 1. Top Navbar */}
       <Navbar 
         onOpenDownloadModal={() => handleOpenDownloadModal()} 
+        onOpenBiografiaModal={() => setBiografiaModalOpen(true)}
         onNavigate={handleNavigate}
       />
 
@@ -153,6 +162,11 @@ export default function App() {
         isOpen={infoModalOpen}
         onClose={() => setInfoModalOpen(false)}
         type={infoModalType}
+      />
+
+      <BiografiaModal
+        isOpen={biografiaModalOpen}
+        onClose={() => setBiografiaModalOpen(false)}
       />
 
       {/* Floating Download Button (Mobile / Desktop Quick Access) */}

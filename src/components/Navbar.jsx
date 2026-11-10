@@ -9,7 +9,7 @@ import {
   ExternalLink 
 } from 'lucide-react';
 
-export default function Navbar({ onOpenDownloadModal, onNavigate }) {
+export default function Navbar({ onOpenDownloadModal, onOpenBiografiaModal, onNavigate }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [observationsOpen, setObservationsOpen] = useState(false);
   const [activeTab, setActiveTab] = useState('inicio');
@@ -30,13 +30,22 @@ export default function Navbar({ onOpenDownloadModal, onNavigate }) {
     { id: 'practica', label: 'Práctica Docente', hasDropdown: false },
     { id: 'reflexiones', label: 'Reflexiones', hasDropdown: false },
     { id: 'conclusiones', label: 'Conclusiones', hasDropdown: false },
-    { id: 'bibliografia', label: 'Bibliografía', hasDropdown: false }
+    { id: 'bibliografia', label: 'Bibliografía', hasDropdown: false },
+    { id: 'biografia-escolar', label: 'Biografía Escolar', hasDropdown: false }
   ];
 
   const handleLinkClick = (id, target) => {
     setActiveTab(id);
     setMobileMenuOpen(false);
     setObservationsOpen(false);
+
+    if (id === 'biografia-escolar') {
+      if (onOpenBiografiaModal) {
+        onOpenBiografiaModal();
+      }
+      return;
+    }
+
     if (onNavigate) {
       onNavigate(id, target);
     }
