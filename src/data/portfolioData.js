@@ -23,7 +23,7 @@ export const allFiles = [
     extension: "DOCX",
     size: "77.6 KB",
     sizeBytes: 79450,
-    path: "/archivos/PLAN_DE_CLASE1_Coercion y Medios_Prueba - Caligrafo (1).docx",
+    path: "/archivos/plan-de-clase-coercion-medios-prueba.docx",
     category: "Planificación",
     description: "Plan de clase detallado para la asignatura Elementos del Derecho Procesal Penal implementando el Modelo 4MAT.",
     relatedCardId: "card-planificacion"
@@ -36,7 +36,7 @@ export const allFiles = [
     extension: "PDF",
     size: "8.7 MB",
     sizeBytes: 9096969,
-    path: "/archivos/Observaciones y analisis.pdf",
+    path: "/archivos/observaciones-y-analisis.pdf",
     category: "Observaciones",
     description: "Informes descriptivos y protocolos de observación de clases presenciales en Derecho Procesal Penal y Ética.",
     relatedCardId: "card-observacion-1"
@@ -49,7 +49,7 @@ export const allFiles = [
     extension: "PDF",
     size: "520.8 KB",
     sizeBytes: 533295,
-    path: "/archivos/Acta constancia Practica docente.pdf",
+    path: "/archivos/acta-constancia-practica-docente.pdf",
     category: "Certificaciones",
     description: "Constancia oficial de la realización y aprobación de la práctica docente en el ámbito institucional.",
     relatedCardId: "card-observacion-2"
@@ -62,7 +62,7 @@ export const allFiles = [
     extension: "PPTX",
     size: "28.7 MB",
     sizeBytes: 30111869,
-    path: "/archivos/Presentacion_final_v_1_kahoot + video.pptx",
+    path: "/archivos/presentacion-final-kahoot-video.pptx",
     category: "Presentaciones",
     description: "Diapositivas interactivas para la exposición: Medidas de coerción personal y medios de prueba con Kahoot y video.",
     relatedCardId: "card-presentacion"
@@ -75,7 +75,7 @@ export const allFiles = [
     extension: "PDF",
     size: "1.7 MB",
     sizeBytes: 1750596,
-    path: "/archivos/Medidas de coerción y Medios de pruebas - Detalles - Kahoot!.pdf",
+    path: "/archivos/medidas-coercion-medios-prueba-kahoot.pdf",
     category: "Evaluación",
     description: "Detalle de preguntas, dinámicas y resultados del cuestionario interactivo de Kahoot aplicado a los estudiantes.",
     relatedCardId: "card-presentacion"
@@ -88,7 +88,7 @@ export const allFiles = [
     extension: "DOCX",
     size: "13.3 KB",
     sizeBytes: 13583,
-    path: "/archivos/Transcriptcion Caso caligrafo.docx",
+    path: "/archivos/transcripcion-caso-caligrafo.docx",
     category: "Casos Prácticos",
     description: "Transcripción y guía pedagógica del caso práctico 'La firma dudosa' aplicado en el aula.",
     relatedCardId: "card-caso"
@@ -101,7 +101,7 @@ export const allFiles = [
     extension: "DOCX",
     size: "16.5 KB",
     sizeBytes: 16548,
-    path: "/archivos/Biografia escolar 01.docx",
+    path: "/archivos/biografia-escolar-01.docx",
     category: "Biografía Escolar",
     description: "Trayectoria escolar y vivencias formativas iniciales en Puerto Rico, provincia de Misiones.",
     relatedCardId: "card-reflexiones"
@@ -114,7 +114,7 @@ export const allFiles = [
     extension: "DOCX",
     size: "15.9 KB",
     sizeBytes: 15903,
-    path: "/archivos/Biografia escolar 02.docx",
+    path: "/archivos/biografia-escolar-02.docx",
     category: "Biografía Escolar",
     description: "Trayectoria escolar y vivencias formativas iniciales en la ciudad de Formosa.",
     relatedCardId: "card-reflexiones"
@@ -131,7 +131,7 @@ export const biografiaFiles = [
     type: "word",
     extension: "DOCX",
     size: "16.5 KB",
-    path: "/archivos/Biografia escolar 01.docx",
+    path: "/archivos/biografia-escolar-01.docx",
     excerpt: "Mi trayectoria escolar comenzó en la ciudad de Puerto Rico, provincia de Misiones, lugar donde transcurrió mi infancia y donde tuve mis primeras experiencias de aprendizaje y socialización."
   },
   {
@@ -143,7 +143,7 @@ export const biografiaFiles = [
     type: "word",
     extension: "DOCX",
     size: "15.9 KB",
-    path: "/archivos/Biografia escolar 02.docx",
+    path: "/archivos/biografia-escolar-02.docx",
     excerpt: "Mi trayectoria escolar comenzó en el Jardín de Infantes María Pomponeo de Escarpa, en la ciudad de Formosa, donde transcurrió gran parte de mi infancia y primeros pasos educativos."
   }
 ];
