@@ -29,6 +29,19 @@ export const allFiles = [
     relatedCardId: "card-planificacion"
   },
   {
+    id: "protocolo-obs-planificacion",
+    name: "Protocolo obs - DIRIE - PEREZ.pdf",
+    displayName: "Protocolo de Observación - DIRIE - PEREZ",
+    type: "pdf",
+    extension: "PDF",
+    size: "162.6 KB",
+    sizeBytes: 166504,
+    path: "/archivos/protocolo-obs-dirie-perez.pdf",
+    category: "Planificación",
+    description: "Protocolo de observación de la práctica docente correspondiente a Dirie y Pérez.",
+    relatedCardId: "card-planificacion"
+  },
+  {
     id: "observaciones",
     name: "Observaciones y analisis.pdf",
     displayName: "Protocolo de Observaciones y Análisis de Clases",
@@ -158,7 +171,7 @@ export const evidenceCards = [
     bullets: null,
     badge: "Modelo 4MAT",
     primaryFileId: "plan-clase",
-    availableFileIds: ["plan-clase", "caso-caligrafo"]
+    availableFileIds: ["plan-clase", "protocolo-obs-planificacion", "caso-caligrafo"]
   },
   {
     id: "card-observacion-1",
