@@ -110,7 +110,7 @@ export default function EvidenceGrid({ onOpenDownloadModal, onSelectPreview, onO
                 <button
                   onClick={() => onOpenVideoModal && onOpenVideoModal()}
                   className="flex-1 inline-flex items-center justify-center space-x-1 py-2 px-2.5 rounded-lg text-xs sm:text-sm font-semibold bg-rose-50 text-rose-700 hover:bg-rose-100 hover:text-rose-800 border border-rose-200 transition-all duration-200 hover:scale-105 active:scale-95 group/btn shadow-xs"
-                  title="Ver video del caso práctico en YouTube"
+                  title="Ver video demostrativo del caso práctico"
                 >
                   <Play className="w-3.5 h-3.5 text-rose-600 fill-rose-600 group-hover/btn:scale-110 transition-transform" />
                   <span>Ver video</span>
